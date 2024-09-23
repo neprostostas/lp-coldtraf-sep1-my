@@ -924,7 +924,7 @@ body {
   }
 
   .hero-section .button.hero-button {
-    top: 75px;
+    top: 85px;
     transform: translate(calc(-50% - 5px), 0);
   }
 
@@ -942,7 +942,7 @@ body {
   }
 
   .hero-section .button.hero-button {
-    top: 80px;
+    top: 85px;
     bottom: unset;
     left: 50%;
     transform: translate(calc(-50% - 5px), 0);
