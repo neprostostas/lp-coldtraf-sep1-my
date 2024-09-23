@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>lp-coldtraf-sep1</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/gsap.min.js"></script>
+  </head>
+  <body>
+
+    <img src="images/glare.png" alt="glare" class="glare">
+
+    <header class="header-wrapper container">
+
+      <div class="logo-mobile">
+        <a href="https://skin.club/en" class="logo-mobile-img">
+          <img src="images/logo-mobile.svg" alt="logo-mobile">
+        </a>
+      </div>
+
+      <div class="header-menu-logo">
+        <a href="https://skin.club/en" class="header-menu-logo__link">
+          <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2065.5%2060.5'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st1{fill-rule:evenodd;clip-rule:evenodd;fill:%235426FF;}%20.st2{opacity:0.5;fill-rule:evenodd;clip-rule:evenodd;fill:%234911D4;}%20.st3{fill-rule:evenodd;clip-rule:evenodd;fill:%23CD40A7;}%20.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(%23SVGID_1_);}%20.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(%23SVGID_2_);}%20%3c/style%3e%3cg%3e%3cpath%20class='st1'%20d='M25.4,45.5l21.5-21.5c1.8-1.8,4.6-1.8,6.3,0l7.3,7.3c1.8,1.8,1.8,4.6,0,6.3L39,59.2c-1.8,1.8-4.6,1.8-6.3,0%20l-7.3-7.3C23.6,50.1,23.6,47.3,25.4,45.5z'/%3e%3cpath%20class='st1'%20d='M25.4,45.5l21.5-21.5c1.8-1.8,4.6-1.8,6.3,0l7.3,7.3c1.8,1.8,1.8,4.6,0,6.3L39,59.2c-1.8,1.8-4.6,1.8-6.3,0%20l-7.3-7.3C23.6,50.1,23.6,47.3,25.4,45.5z'/%3e%3cpath%20class='st2'%20d='M50.5,38.7c1.8-1.8,1.8-4.6,0-6.3l-6-6L25.4,45.5c-1.8,1.8-1.8,4.6,0,6.3l6,6L50.5,38.7z'/%3e%3cpath%20class='st1'%20d='M3.5,22L24.1,1.3c1.8-1.8,4.6-1.8,6.3,0l7.3,7.3c1.8,1.8,1.8,4.6,0,6.3L17.1,35.6c-1.8,1.8-4.6,1.8-6.3,0%20l-7.3-7.3C1.7,26.6,1.7,23.7,3.5,22z'/%3e%3cpath%20class='st2'%20d='M37.8,15c1.8-1.8,1.8-4.6,0-6.3l-5.5-5.5L13.5,22c-1.8,1.8-1.8,4.6,0,6.3l5.5,5.5L37.8,15z'/%3e%3cpath%20class='st3'%20d='M63.6,18.6l-5.7,1c-1,0.2-1.9-0.1-2.6-0.8L43.4,6.9c-2.6-2.6-7-2.6-9.6,0L0.2,40.4c-0.5,0.5-0.1,1.2,0.6,1.1%20L7,40.5c0.9-0.1,1.8,0.1,2.4,0.8l11.8,11.8c3,3,6.9,2.8,9.9-0.3l33.1-33.1C64.7,19.2,64.2,18.4,63.6,18.6z%20M44.3,25.2%20C44.3,25.2,44.3,25.2,44.3,25.2L29,40.5c-1.5,1.5-4,1.5-5.5,0l-3.3-3.3c-0.5-0.5-0.6-1.4,0-2l0,0l15.6-15.6c1.3-1.3,3.5-1.3,4.8,0%20l3.7,3.7C44.8,23.8,44.8,24.7,44.3,25.2z'/%3e%3clinearGradient%20id='SVGID_1_'%20gradientUnits='userSpaceOnUse'%20x1='10.9518'%20y1='53.5451'%20x2='37.9567'%20y2='39.5696'%3e%3cstop%20offset='0'%20style='stop-color:%236311DD'/%3e%3cstop%20offset='1'%20style='stop-color:%236311DD;stop-opacity:0'/%3e%3c/linearGradient%3e%3cpath%20class='st4'%20d='M46.6,37.3l-2.5-2.8l-10,0.9L29,40.5c-1.5,1.5-4,1.5-5.5,0l5.1,5.1c3,3,6.9,2.8,9.9-0.3L46.6,37.3z'/%3e%3clinearGradient%20id='SVGID_2_'%20gradientUnits='userSpaceOnUse'%20x1='50.6241'%20y1='-0.6862'%20x2='28.8993'%20y2='21.4243'%3e%3cstop%20offset='0'%20style='stop-color:%236311DD'/%3e%3cstop%20offset='1'%20style='stop-color:%236311DD;stop-opacity:0'/%3e%3c/linearGradient%3e%3cpath%20class='st5'%20d='M26,14.6L15.9,24.7c3.6,2.5,7.6,5.3,7.6,5.3s0.2,0.5,0.5,1.2l11.8-11.8c1.3-1.3,3.5-1.3,4.8,0l-4.9-4.9%20C33,11.9,28.7,11.9,26,14.6z'/%3e%3c/g%3e%3c/svg%3e" class="logo" width="46" alt="Skin.Club">
+          <div class="text-wrapper">
+            <img class="logo-text" width="100" alt="Skin.Club" src="data:image/svg+xml,%3csvg%20viewBox='0%200%20101%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_157_19290)'%3e%3cpath%20d='M12.2%201.00098H2.4C1.8%201.00098%201.2%201.30098%200.7%201.70098C0.2%202.20098%200%202.80098%200%203.50098V6.80098C0%207.40098%200.2%208.00098%200.7%208.50098C1.2%209.00098%201.8%209.20098%202.5%209.20098H12.3C12.5%209.20098%2012.7%209.30098%2012.9%209.40098C13.1%209.60098%2013.1%209.70098%2013.1%2010.001V13.301C13.1%2013.501%2013%2013.701%2012.9%2013.901C12.7%2014.101%2012.6%2014.101%2012.3%2014.101H2.4C2.2%2014.101%202%2014.001%201.8%2013.901C1.6%2013.701%201.6%2013.601%201.6%2013.301V12.701H0V13.301C0%2014.001%200.2%2014.601%200.7%2015.001C1.2%2015.501%201.8%2015.701%202.4%2015.701H12.2C12.9%2015.701%2013.5%2015.501%2013.9%2015.001C14.4%2014.501%2014.6%2013.901%2014.6%2013.301V10.001C14.6%209.30098%2014.4%208.70098%2013.9%208.30098C13.4%207.80098%2012.8%207.60098%2012.2%207.60098H2.4C2.2%207.50098%202%207.50098%201.9%207.30098C1.7%207.20098%201.7%207.00098%201.7%206.80098V3.50098C1.7%203.30098%201.8%203.10098%201.9%202.90098C2%202.70098%202.2%202.70098%202.4%202.70098H12.2C12.4%202.70098%2012.6%202.80098%2012.8%202.90098C13%203.10098%2013%203.30098%2013%203.50098V4.00098H14.7V3.50098C14.7%202.80098%2014.5%202.20098%2014%201.80098C13.5%201.30098%2012.9%201.00098%2012.2%201.00098Z'%20fill='white'/%3e%3cpath%20d='M26.3002%203.90098L21.6002%209.00098H18.4002V0.000976562H16.7002V15.701H18.4002V10.601H21.6002L26.3002%2015.701H28.5002L23.1002%209.80098L28.5002%203.90098H26.3002Z'%20fill='white'/%3e%3cpath%20d='M31.8001%200.000976562H30.1001V1.70098H31.8001V0.000976562Z'%20fill='white'/%3e%3cpath%20d='M49.4998%2014.001H47.7998V15.701H49.4998V14.001Z'%20fill='white'/%3e%3cpath%20d='M31.8001%203.90088H30.1001V15.7009H31.8001V3.90088Z'%20fill='white'/%3e%3cpath%20d='M43.6%203.90088H34V15.7009H35.7V6.30088C35.7%206.10088%2035.8%205.90088%2035.9%205.70088C36.1%205.50088%2036.3%205.50088%2036.5%205.50088H43.6C43.8%205.50088%2044%205.60088%2044.2%205.70088C44.4%205.90088%2044.4%206.00088%2044.4%206.30088V15.7009H46.1V6.30088C46.1%205.60088%2045.9%205.00088%2045.4%204.60088C44.9%204.10088%2044.3%203.90088%2043.6%203.90088Z'%20fill='white'/%3e%3cpath%20d='M51.9002%201.70098C51.4002%202.20098%2051.2002%202.80098%2051.2002%203.40098V13.201C51.2002%2013.901%2051.4002%2014.501%2051.9002%2014.901C52.4002%2015.401%2053.0002%2015.601%2053.6002%2015.601H65.8002V13.901H53.6002C53.4002%2013.901%2053.2002%2013.801%2053.0002%2013.701C52.8002%2013.501%2052.8002%2013.401%2052.8002%2013.101V3.50098C52.8002%203.30098%2052.9002%203.10098%2053.0002%202.90098C53.2002%202.70098%2053.3002%202.70098%2053.6002%202.70098H65.8002V1.00098H53.6002C53.0002%201.00098%2052.4002%201.30098%2051.9002%201.70098Z'%20fill='white'/%3e%3cpath%20d='M69.6998%2013.801C69.4998%2013.601%2069.4998%2013.501%2069.4998%2013.201V0.000976562H67.7998V13.201C67.7998%2013.901%2067.9998%2014.501%2068.4998%2014.901C68.9998%2015.401%2069.5998%2015.601%2070.1998%2015.601H72.1998V14.001H70.1998C70.0998%2014.001%2069.8998%2014.001%2069.6998%2013.801Z'%20fill='white'/%3e%3cpath%20d='M84.5%2013.2009C84.5%2013.4009%2084.4%2013.6009%2084.3%2013.8009C84%2014.0009%2083.9%2014.0009%2083.6%2014.0009H76.5C76.3%2014.0009%2076.1%2013.9009%2075.9%2013.8009C75.7%2013.6009%2075.7%2013.5009%2075.7%2013.2009V3.90088H74V13.3009C74%2014.0009%2074.2%2014.6009%2074.7%2015.0009C75.2%2015.5009%2075.8%2015.7009%2076.4%2015.7009H83.5C84.2%2015.7009%2084.8%2015.5009%2085.3%2015.0009C85.8%2014.5009%2086%2013.9009%2086%2013.3009V3.90088H84.3V13.2009H84.5Z'%20fill='white'/%3e%3cpath%20d='M99.5002%204.60098C99.0002%204.10098%2098.4002%203.90098%2097.8002%203.90098H89.9002V0.000976562H88.2002V15.701H97.8002C98.5002%2015.701%2099.1002%2015.501%2099.5002%2015.001C100%2014.501%20100.2%2013.901%20100.2%2013.301V6.30098C100.2%205.70098%20100%205.10098%2099.5002%204.60098ZM98.6002%2013.201C98.6002%2013.401%2098.5002%2013.601%2098.4002%2013.801C98.2002%2014.001%2098.0002%2014.001%2097.8002%2014.001H90.7002C90.5002%2014.001%2090.3002%2013.901%2090.1002%2013.801C89.9002%2013.601%2089.9002%2013.501%2089.9002%2013.201V6.30098C89.9002%206.10098%2090.0002%205.90098%2090.1002%205.70098C90.2002%205.50098%2090.5002%205.50098%2090.7002%205.50098H97.8002C98.0002%205.50098%2098.2002%205.60098%2098.4002%205.70098C98.6002%205.90098%2098.6002%206.00098%2098.6002%206.30098V13.201Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_157_19290'%3e%3crect%20width='100.2'%20height='15.7'%20fill='white'%20transform='translate(0%200.000976562)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e">
+            <span class="slogan">Drive . Love . CS2</span>
+          </div>
+        </a>
+        <div class="tooltip tooltip__custom pf-tooltip right-position">
+          <div class="pf-info-icon"></div>
+          <div class="tooltip__text">All Skin.Club mechanics are created using
+            <a href="https://skin.club/en/provably-fair" class="link">Provably fair technology</a>
+          </div>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://discord.gg/APzbvev" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.9567 1.35118C16.9513 1.33975 16.9421 1.33118 16.9309 1.32618C15.634 0.701539 14.2656 0.255824 12.8598 0.000823146C12.8336 -0.00417686 12.8071 0.00868031 12.7945 0.0333232C12.6081 0.388324 12.4391 0.753325 12.2877 1.12618C10.7724 0.884754 9.2309 0.884754 7.71525 1.12618C7.56287 0.752253 7.3911 0.387253 7.20062 0.0333232C7.18736 0.00939459 7.16117 -0.00346258 7.13532 0.000823146C5.7292 0.255467 4.36083 0.700825 3.06423 1.32618C3.05301 1.33118 3.04382 1.3394 3.03736 1.35047C0.444503 5.41583 -0.265701 9.38156 0.0825986 13.298C0.0846394 13.3173 0.0938231 13.3351 0.108449 13.3473C1.61831 14.5212 3.30709 15.4169 5.10267 15.9969C5.12852 16.0051 5.15641 15.9955 5.17273 15.9726C5.55845 15.4216 5.89994 14.8384 6.1945 14.2284C6.21015 14.1955 6.1979 14.1555 6.16661 14.1391C6.16423 14.138 6.16219 14.1369 6.15981 14.1359C5.62103 13.9194 5.09926 13.6584 4.5996 13.3555C4.56899 13.3366 4.55879 13.2955 4.57682 13.2634C4.5809 13.2559 4.58668 13.2491 4.59314 13.2437C4.6979 13.1612 4.80301 13.0755 4.90301 12.9887C4.92103 12.973 4.9462 12.9694 4.96763 12.9794C8.24076 14.548 11.7843 14.548 15.0187 12.9794C15.0401 12.9687 15.0656 12.9719 15.084 12.9876C15.184 13.0744 15.2891 13.1609 15.3945 13.2434C15.4227 13.2655 15.4285 13.3076 15.4074 13.3376C15.4023 13.3448 15.3962 13.3505 15.3891 13.3551C14.8908 13.6609 14.3683 13.9216 13.8282 14.1348C13.7952 14.148 13.7789 14.1866 13.7911 14.2212C13.7918 14.2237 13.7928 14.2259 13.7942 14.228C14.0935 14.8344 14.4346 15.4173 14.8149 15.9716C14.8309 15.9948 14.8591 16.0048 14.885 15.9966C16.6836 15.4187 18.3755 14.5226 19.887 13.3469C19.902 13.3355 19.9115 13.318 19.9132 13.2987C20.3309 8.77084 19.2152 4.83798 16.9567 1.35118ZM6.68328 10.9133C5.6979 10.9133 4.886 9.9637 4.886 8.79763C4.886 7.63155 5.68226 6.68191 6.68328 6.68191C7.69246 6.68191 8.49654 7.63977 8.48056 8.79763C8.48056 9.9637 7.6843 10.9133 6.68328 10.9133ZM13.3289 10.9133C12.3435 10.9133 11.5316 9.9637 11.5316 8.79763C11.5316 7.63155 12.3278 6.68191 13.3289 6.68191C14.338 6.68191 15.1421 7.63977 15.1261 8.79763C15.1261 9.9637 14.338 10.9133 13.3289 10.9133Z" fill="#9793BA"/>
+          </svg>
+        </a>
+
+        <a href="https://www.faceit.com/en/organizers/0116a420-fa02-4fad-8ec4-0c1d26374cd2/SkinClub%20Global%20League" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8" clip-path="url(#clip0_1602_2981)">
+              <path d="M19.9686 13.778C19.9059 14.1118 19.6707 13.9866 19.4747 13.9171C17.7185 13.312 15.9702 12.6861 14.214 12.088C9.5884 10.5023 4.95492 8.92354 0.329283 7.35175C0.227362 7.31698 0.125441 7.24048 0 7.27525C0 7.18484 0 7.08747 0 6.99706C0.203842 6.99011 0.415523 6.9762 0.619365 6.9762C5.29204 6.9762 9.96472 6.98315 14.6452 6.98315C14.7707 7.03183 14.8412 7.12225 14.9196 7.21961C15.3508 7.78991 15.7899 8.3602 16.2289 8.92354C17.4755 10.544 18.7221 12.1575 19.9686 13.778Z" fill="#7F7DA0"/>
+              <path d="M19.9684 13.7776C18.7219 12.1571 17.4753 10.5366 16.2287 8.92312C15.7897 8.35283 15.3506 7.78949 14.9194 7.2192C14.8489 7.12183 14.7705 7.03142 14.645 6.98274C16.2836 4.75025 17.9143 2.51776 19.5607 0.292224C19.647 0.180947 19.6862 -0.0416063 19.8979 0.014032C20.0703 0.0627156 19.9841 0.25745 19.9841 0.389591C19.9919 4.75025 19.9841 9.1109 19.9841 13.4716C19.9763 13.5759 19.9684 13.6732 19.9684 13.7776Z" fill="#9793BA"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1602_2981">
+                <rect width="20" height="14" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <a href="https://twitter.com/skinclubmedia" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5273 1.62012C19.2215 1.74012 18.892 1.84012 18.5626 1.92012C18.9626 1.54012 19.245 1.10012 19.4332 0.600122C19.4803 0.480122 19.4332 0.380122 19.3391 0.300122C19.2215 0.240122 19.0803 0.220122 18.9626 0.280122C18.2567 0.640122 17.5038 0.900122 16.7038 1.04012C15.9273 0.380122 14.845 0.00012207 13.7156 0.00012207C11.3391 0.00012207 9.40969 1.64012 9.40969 3.68012C9.40969 3.84012 9.43321 4.00012 9.45674 4.14012C6.51557 3.92012 3.78616 2.68012 1.92733 0.720122C1.85675 0.660122 1.7391 0.620122 1.64498 0.620122C1.55086 0.620122 1.45675 0.680122 1.38616 0.760122C1.00969 1.32012 0.797922 1.96012 0.797922 2.60012C0.797922 3.48012 1.17439 4.32012 1.80969 4.98012C1.62145 4.92012 1.43322 4.86012 1.24498 4.76012C1.15086 4.72012 1.03322 4.72012 0.939098 4.76012C0.84498 4.82012 0.774392 4.90012 0.774392 5.00012C0.774392 5.02012 0.774392 5.04012 0.774392 5.06012C0.774392 6.38012 1.59792 7.56012 2.86851 8.22012C2.75086 8.22012 2.65675 8.20012 2.5391 8.18012C2.42145 8.16012 2.3038 8.20012 2.23322 8.26012C2.16263 8.34012 2.1391 8.44012 2.18616 8.52012C2.65675 9.78012 3.85674 10.7001 5.3391 10.9801C4.11557 11.6401 2.72733 11.9801 1.29204 11.9801C0.986157 11.9801 0.680275 11.9601 0.374392 11.9401C0.209686 11.9201 0.0685099 12.0001 0.0214511 12.1201C-0.0256077 12.2401 0.0214511 12.3801 0.139098 12.4401C2.02145 13.4601 4.18616 14.0001 6.39792 14.0001C10.7744 14.0001 13.5038 12.2401 15.0332 10.7601C16.9391 8.92012 18.0214 6.48012 18.0214 4.06012C18.0214 3.96012 18.0214 3.86012 18.0214 3.76012C18.7744 3.28012 19.4097 2.70012 19.9509 2.02012C20.0214 1.92012 20.0215 1.78012 19.9273 1.68012C19.8097 1.60012 19.6685 1.56012 19.5273 1.62012Z" fill="#9793BA"/>
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@skinclub_cs" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8" clip-path="url(#clip0_1602_2988)">
+              <path d="M15.0002 7.38086C13.5267 7.38438 12.0866 6.90264 10.8877 6.00247V12.2861C10.8877 15.4438 8.44967 18.0001 5.44231 18.0001C2.43494 18.0001 0.000244141 15.4367 0.000244141 12.2826C0.000244141 9.12847 2.43829 6.56859 5.44566 6.56859C5.69348 6.56859 5.94465 6.58617 6.19247 6.62134V9.7825C4.87633 9.34648 3.47312 10.1166 3.05785 11.4985C2.64258 12.8804 3.376 14.3537 4.69214 14.7897C6.00828 15.2258 7.4115 14.4557 7.82677 13.0738C7.90379 12.8206 7.94063 12.5534 7.94063 12.2861V0.00012207H10.8877C10.8844 0.260329 10.9078 0.524053 10.9513 0.780743C11.159 1.94113 11.812 2.96086 12.7564 3.60083C13.4229 4.06146 14.2032 4.3076 15.0002 4.3076V7.38086Z" fill="#9793BA"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1602_2988">
+                <rect width="15" height="18" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/skinclub_csgo" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8" clip-path="url(#clip0_1602_2990)">
+              <path d="M14.692 4.29762C14.692 4.43262 14.6695 4.56762 14.6133 4.69137C14.557 4.81512 14.4895 4.92762 14.3883 5.02887C14.287 5.13012 14.1745 5.19762 14.0508 5.25387C13.927 5.31012 13.792 5.33262 13.657 5.33262C13.522 5.33262 13.387 5.31012 13.2633 5.25387C13.1395 5.19762 13.027 5.13012 12.9258 5.02887C12.8245 4.92762 12.757 4.81512 12.7008 4.69137C12.6445 4.56762 12.622 4.43262 12.622 4.29762C12.622 4.01637 12.7345 3.75762 12.9258 3.56637C13.117 3.37512 13.387 3.26262 13.657 3.26262C13.927 3.26262 14.197 3.37512 14.3883 3.56637C14.5795 3.75762 14.692 4.01637 14.692 4.29762ZM17.9995 9.00012V9.01137L17.9433 12.7914C17.932 14.1526 17.3808 15.4576 16.4133 16.4139C15.4458 17.3814 14.152 17.9214 12.7908 17.9439L8.99951 18.0001H8.98826L5.20826 17.9439C3.84701 17.9326 2.54201 17.3814 1.58576 16.4139C0.618262 15.4464 0.0782617 14.1526 0.0557617 12.7914L-0.000488281 9.00012V8.98887L0.0557617 5.20887C0.0670117 3.84762 0.618262 2.54262 1.58576 1.58637C2.55326 0.618872 3.84701 0.0788721 5.20826 0.0563721L8.99951 0.00012207H9.01076L12.7908 0.0563721C14.152 0.0676221 15.457 0.618872 16.4133 1.58637C17.3808 2.55387 17.9208 3.84762 17.9433 5.20887L17.9995 9.00012ZM16.3233 9.00012L16.267 5.24262C16.2558 4.32012 15.8845 3.43137 15.232 2.77887C14.5795 2.12637 13.6908 1.75512 12.7683 1.74387L8.99951 1.67637L5.24201 1.73262C4.30826 1.74387 3.43076 2.11512 2.76701 2.76762C2.11451 3.43137 1.74326 4.30887 1.73201 5.24262L1.67576 9.00012L1.73201 12.7689C1.74326 13.6914 2.11451 14.5801 2.76701 15.2326C3.41951 15.8851 4.30826 16.2564 5.23076 16.2676L8.99951 16.3239L12.7683 16.2676C13.6908 16.2564 14.5795 15.8851 15.232 15.2326C15.8845 14.5801 16.2558 13.6914 16.267 12.7689L16.3233 9.00012ZM13.6233 9.00012C13.6233 10.2264 13.1395 11.3964 12.2733 12.2626C11.407 13.1289 10.2258 13.6126 9.01076 13.6126C7.79576 13.6126 6.61451 13.1289 5.74826 12.2626C4.88201 11.3964 4.37576 10.2264 4.37576 9.00012C4.37576 7.77387 4.85951 6.60387 5.72576 5.73762C6.59201 4.87137 7.77326 4.38762 8.98826 4.38762C10.2033 4.38762 11.3845 4.87137 12.2508 5.73762C13.117 6.60387 13.6233 7.77387 13.6233 9.00012ZM11.947 9.00012C11.947 8.22387 11.632 7.47012 11.0808 6.91887C10.5295 6.36762 9.77576 6.05262 8.99951 6.05262C8.22326 6.05262 7.46951 6.36762 6.91826 6.91887C6.36701 7.47012 6.05201 8.22387 6.05201 9.00012C6.05201 9.77637 6.36701 10.5301 6.91826 11.0814C7.46951 11.6326 8.22326 11.9476 8.99951 11.9476C9.77576 11.9476 10.5295 11.6326 11.0808 11.0814C11.632 10.5301 11.947 9.77637 11.947 9.00012Z" fill="#9793BA"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1602_2990">
+                <rect width="18" height="18" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <a href="https://www.youtube.com/c/SkinClub" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8" clip-path="url(#clip0_1602_2992)">
+              <path d="M19.582 2.1862C19.3521 1.32578 18.6745 0.647917 17.8138 0.417969C16.2542 0 10 0 10 0C10 0 3.74583 0 2.18594 0.417969C1.32552 0.647917 0.647656 1.32552 0.417708 2.1862C0 3.74583 0 7 0 7C0 7 0 10.2542 0.417969 11.8138C0.647917 12.6745 1.32578 13.3521 2.1862 13.582C3.74583 14 10 14 10 14C10 14 16.2542 14 17.8141 13.5823C18.6745 13.3523 19.3523 12.6745 19.5823 11.8141C20 10.2544 20 7 20 7C20 7 20 3.74583 19.582 2.1862ZM8 10.0003V4L13.1961 7L8 10.0003Z" fill="#9793BA"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1602_2992">
+                <rect width="20" height="14" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com/skinclubgroup" rel="nofollow noreferrer noopener" class="socials__item" target="_blank">
+          <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8">
+              <path d="M0.239279 8.57817H1.88066V15.8425C1.88066 15.9866 1.99221 16.1053 2.11969 16.1053H4.90844C5.04389 16.1053 5.14747 15.9866 5.14747 15.8425V8.61208H7.03585C7.15537 8.61208 7.25895 8.51884 7.27489 8.38321L7.5697 5.70465C7.57766 5.62837 7.55376 5.56055 7.51392 5.50122C7.46611 5.44188 7.40237 5.41645 7.33066 5.41645H5.15544V3.73812C5.15544 3.22953 5.41041 2.97524 5.90442 2.97524C5.97613 2.97524 7.33066 2.97524 7.33066 2.97524C7.46611 2.97524 7.5697 2.85657 7.5697 2.71247V0.254294C7.57766 0.11867 7.46611 0 7.33066 0H5.37057C5.35463 0 5.33073 0 5.28292 0C4.94031 0 3.76107 0.076288 2.82086 0.991745C1.78504 2.0174 1.92846 3.23801 1.96033 3.44992V5.40798H0.239279C0.111794 5.41645 0.000244141 5.53512 0.000244141 5.67922V8.32388C0.000244141 8.4595 0.111794 8.57817 0.239279 8.57817Z" fill="#9793BA"/>
+            </g>
+          </svg>
+        </a>
+
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="live-feed">
+
+        <div class="live-feed__row">
+          <div class="live-feed__section is-wow live-feed-header">
+            <img class="live-feed-header__fire-icon" src="images/fire.CXnlFic9.gif" alt="fire">
+            <span class="live-feed-header__label">Wow drop</span>
+          </div>
+          <div class="live-feed__section is-ordinary live-feed-header">
+            <span class="live-feed-header__label">Live drop</span>
+          </div>
+        </div>
+
+
+        <div class="live-feed__row live-feed-conveyor">
+          <div class="live-feed__section is-wow live-feed-conveyor__wow">
+
+            <div class="conveyor">
+              <div class="conveyor__list-container">
+                <div class="conveyor__list">
+                  <div class="conveyor__chunk">
+                    <div class="live-drop rarity-7 wow live-feed-conveyor__item">
+                      <div class="live-drop__content rarity-7 wow">
+
+                        <div class="live-drop__content-center">
+                          <div class="live-drop__image-wrapper">
+                            <img src="images/live-feed/Stiletto%20Knife%20Ultraviolet.png" alt="★ Stiletto Knife Ultraviolet">
+                          </div>
+                          <span class="live-drop__weapon">
+                             ★ Stiletto Knife
+                          </span>
+                          <span class="live-drop__finish">Ultraviolet</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="conveyor__chunk">
+                    <div class="live-drop rarity-7 wow live-feed-conveyor__item">
+                      <div class="live-drop__content rarity-7 wow">
+                        <span class="battle-icon"></span>
+                        <div class="live-drop__content-center">
+                          <div class="live-drop__image-wrapper">
+                            <img src="images/live-feed/Specialist%20Gloves%20Tiger%20Strike.png" alt="★ Specialist Gloves Tiger Strike">
+                          </div>
+                          <span class="live-drop__weapon">
+                             ★ Specialist Gloves
+                          </span>
+                          <span class="live-drop__finish">Tiger Strike</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="live-drop rarity-7 wow live-feed-conveyor__item">
+                      <div class="live-drop__content rarity-7 wow">
+                        <span class="battle-icon"></span>
+                        <div class="live-drop__content-center">
+                          <div class="live-drop__image-wrapper">
+                            <img src="images/live-feed/Specialist%20Gloves%20Tiger%20Strike.png" alt="★ Specialist Gloves Tiger Strike">
+                          </div>
+                          <span class="live-drop__weapon">
+                             ★ Specialist Gloves
+                          </span>
+                          <span class="live-drop__finish">Tiger Strike</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="conveyor__chunk">
+                    <div class="live-drop rarity-7 wow live-feed-conveyor__item">
+                      <div class="live-drop__content rarity-7 wow">
+
+                        <div class="live-drop__content-center">
+                          <div class="live-drop__image-wrapper">
+                            <img src="images/live-feed/Kukri%20Knife%20Urban%20Masked.png" alt="★ Kukri Knife Urban Masked">
+                          </div>
+                          <span class="live-drop__weapon">
+                             ★ Kukri Knife
+                          </span>
+                          <span class="live-drop__finish">Urban Masked</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="live-feed__section is-ordinary live-feed-conveyor__ordinary">
+
+            <div class="conveyor">
+              <div class="conveyor__list-container">
+                <div class="conveyor__list">
+                  <div class="live-drop rarity-3 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-3 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/CZ75-Auto%20Circaetus.png" alt="CZ75-Auto Circaetus">
+                        </div>
+                        <span class="live-drop__weapon">
+                           CZ75-Auto
+                        </span>
+                        <span class="live-drop__finish">Circaetus</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-3 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-3 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/Desert%20Eagle%20Blue%20Ply.png" alt="Desert Eagle Blue Ply">
+                        </div>
+                        <span class="live-drop__weapon">
+                           Desert Eagle
+                        </span>
+                        <span class="live-drop__finish">Blue Ply</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-5 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-5 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/CZ75-Auto%20Xiangli.png" alt="CZ75-Auto Xiangliu">
+                        </div>
+                        <span class="live-drop__weapon">
+                           CZ75-Auto
+                        </span>
+                        <span class="live-drop__finish">Xiangliu</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-4 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-4 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/Sticker%20Defuse%20It%20(Holo).png" alt="Sticker Defuse It (Holo)">
+                        </div>
+                        <span class="live-drop__weapon">
+                           Sticker
+                        </span>
+                        <span class="live-drop__finish">Defuse It (Holo)</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-6 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-6 ordinary">
+
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/MP7%20Bloodsport.png" alt="MP7 Bloodsport">
+                        </div>
+                        <span class="live-drop__weapon">
+                           MP7
+                        </span>
+                        <span class="live-drop__finish">Bloodsport</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-6 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-6 ordinary">
+
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/Five-SeveN%20Angry%20Mob.png" alt="Five-SeveN Angry Mob">
+                        </div>
+                        <span class="live-drop__weapon">
+                           Five-SeveN
+                        </span>
+                        <span class="live-drop__finish">Angry Mob</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-6 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-6 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/Glock-18%20Neo-Noir.png" alt="Glock-18 Neo-Noir">
+                        </div>
+                        <span class="live-drop__weapon">
+                           Glock-18
+                        </span>
+                        <span class="live-drop__finish">Neo-Noir</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-6 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-6 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/MP9%20Starlight%20Protector.png" alt="MP9 Starlight Protector">
+                        </div>
+                        <span class="live-drop__weapon">
+                           MP9
+                        </span>
+                        <span class="live-drop__finish">Starlight Protector</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-3 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-3 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/M4A4%20Magnesium.png" alt="M4A4 Magnesium">
+                        </div>
+                        <span class="live-drop__weapon">
+                           M4A4
+                        </span>
+                        <span class="live-drop__finish">Magnesium</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-4 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                    <div class="live-drop__content rarity-4 ordinary">
+                      <span class="battle-icon"></span>
+                      <div class="live-drop__content-center">
+                        <div class="live-drop__image-wrapper">
+                          <img src="images/live-feed/M4A4%20Etch%20Lord.png" alt="M4A4 Etch Lord">
+                        </div>
+                        <span class="live-drop__weapon">
+                           M4A4
+                        </span>
+                        <span class="live-drop__finish">Etch Lord</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="live-drop rarity-3 ordinary live-feed-conveyor__item"> <!-- style="transform: translateY(-100%);"> -->
+                      <div class="live-drop__content rarity-3 ordinary">
+                        <span class="battle-icon"></span>
+                        <div class="live-drop__content-center">
+                          <div class="live-drop__image-wrapper">
+                            <img src="images/live-feed/AUG%20Triqua.png" alt="AUG Triqua">
+                          </div>
+                          <span class="live-drop__weapon">
+                             AUG
+                          </span>
+                          <span class="live-drop__finish">Triqua</span>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="container">
+
+        <div class="hero-section">
+
+          <div class="hero-text-part">
+            <h1 class="title">
+              <span>OBȚINEȚI +7%</span>
+              <br>
+              PENTRU FIECARE DINTRE PRIMELE TREI REÎNCĂRCĂRI!
+            </h1>
+          </div>
+
+          <a class="button hero-button" href={offer_link}><span>PRIMEȘTE CODUL PROMOȚIONAL PERSONAL</span></a>
+
+          <img class="hero-banner" src="images/hero-banner.png" alt="hero-banner">
+          <img class="hero-banner-mb" src="images/hero-banner-mb.png" alt="hero-banner-mb">
+        </div>
+
+        <div class="cases-section">
+
+          <div class="case">
+
+            <div class="price">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 32" fill="none">
+                <path d="M0 8.12391L8.03558 0H78.4228L86 7.6603V24.2319L78.3163 32H8.14239L0 23.7682V8.12391Z" fill="url(#paint0_linear_1554_3296)" fill-opacity="0.2"/>
+                <path d="M0.5 23.5627V8.32942L8.24429 0.5H78.2141L85.5 7.86581V24.0264L78.1076 31.5H8.3511L0.5 23.5627Z" stroke="#4AF1B8" stroke-opacity="0.21"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1554_3296" x1="0" y1="16" x2="117" y2="16" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4AF1B8"/>
+                    <stop offset="1" stop-color="#2B8B6A"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>$ 35.00</span>
+            </div>
+
+            <h2 class="name">STEEL SAMURAI CASE</h2>
+
+            <img class="case-img case-1" src="images/cases/case-1.png" alt="case-1">
+
+            <a class="button hero-button" href={offer_link}><span>OPEN CASE</span></a>
+
+
+            <div class="space">
+
+              <h2 class="hover-text">TOP SKINS IN THIS CASE</h2>
+
+              <div class="weapons">
+
+                <div class="weapon one">
+
+                  <img class="weapon-img weapon-1-1" src="images/weapons/weapon-1-1.png" alt="weapon-1-1">
+
+                  <p class="item">★ M9 Bayonet</p>
+                  <p class="item-name">Slaughter</p>
+                  <p class="item-quality">Minimal Wear</p>
+
+                  <div class="item-price">$1449.00</div>
+
+                </div>
+                <div class="weapon two">
+
+                  <img class="weapon-img weapon-1-2" src="images/weapons/weapon-1-2.png" alt="weapon-1-2">
+
+                  <p class="item">M4A1-S</p>
+                  <p class="item-name">Hot Rod</p>
+                  <p class="item-quality">Factory New</p>
+
+                  <div class="item-price">$1320.00</div>
+
+                </div>
+                <div class="weapon three">
+
+                  <img class="weapon-img weapon-1-3" src="images/weapons/weapon-1-3.png" alt="weapon-1-3">
+
+                  <p class="item">★ Driver Gloves</p>
+                  <p class="item-name">Crimson Weave</p>
+                  <p class="item-quality">Field-Tested</p>
+
+                  <div class="item-price">$266.89</div>
+
+                </div>
+
+              </div>
+
+              <svg class="hover-figure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 563 754" fill="none">
+                <g filter="url(#filter0_b_1632_8703)">
+                  <path d="M-1.13971e-06 727.927L-3.18187e-05 26.0734L30.9485 2.32567e-05L532.051 1.3528e-06L563 26.0734L563 727.927L532.051 754L30.9485 754L-1.13971e-06 727.927Z" fill="url(#paint0_linear_1632_8703)" fill-opacity="0.7"/>
+                  <path d="M31.3136 1.00002L0.999968 26.5385L0.999999 727.461L31.3136 753L531.686 753L562 727.461L562 26.5385L531.686 1L31.3136 1.00002Z" stroke="url(#paint1_linear_1632_8703)" stroke-width="2"/>
+                </g>
+                <defs>
+                  <filter id="filter0_b_1632_8703" x="-20" y="-20" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1632_8703"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1632_8703" result="shape"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_1632_8703" x1="96.7962" y1="521.505" x2="96.7962" y2="67.7362" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#25144A"/>
+                    <stop offset="1" stop-color="#25144A" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1632_8703" x1="120.502" y1="534" x2="130.354" y2="-25.6488" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6149F5"/>
+                    <stop offset="1" stop-color="#AA04D4" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <div class="blur"></div>
+
+            </div>
+
+          </div>
+
+          <div class="case">
+
+            <div class="price">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 32" fill="none">
+                <path d="M0 8.12391L8.03558 0H78.4228L86 7.6603V24.2319L78.3163 32H8.14239L0 23.7682V8.12391Z" fill="url(#paint0_linear_1554_3296)" fill-opacity="0.2"/>
+                <path d="M0.5 23.5627V8.32942L8.24429 0.5H78.2141L85.5 7.86581V24.0264L78.1076 31.5H8.3511L0.5 23.5627Z" stroke="#4AF1B8" stroke-opacity="0.21"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1554_3296" x1="0" y1="16" x2="117" y2="16" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4AF1B8"/>
+                    <stop offset="1" stop-color="#2B8B6A"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>$ 90.00</span>
+            </div>
+
+            <h2 class="name">THIS IS A MAJOR! CASE</h2>
+
+            <img class="case-img case-2" src="images/cases/case-2.png" alt="case-2">
+
+            <a class="button hero-button" href={offer_link}><span>OPEN CASE</span></a>
+
+            <div class="space">
+
+              <h2 class="hover-text">TOP SKINS IN THIS CASE</h2>
+
+              <div class="weapons">
+
+                <div class="weapon one">
+
+                  <img class="weapon-img weapon-2-1" src="images/weapons/weapon-2-1.png" alt="weapon-2-1">
+
+                  <p class="item">AWP</p>
+                  <p class="item-name">Medusa</p>
+                  <p class="item-quality">Field-Tested</p>
+
+                  <div class="item-price">$2385.10</div>
+
+                </div>
+                <div class="weapon two">
+
+                  <img class="weapon-img weapon-2-2" src="images/weapons/weapon-2-2.png" alt="weapon-2-2">
+
+                  <p class="item">M4A4</p>
+                  <p class="item-name">Poseidon</p>
+                  <p class="item-quality">Minimal Wear</p>
+
+                  <div class="item-price">$1443.67</div>
+
+                </div>
+                <div class="weapon three">
+
+                  <img class="weapon-img weapon-2-3" src="images/weapons/weapon-2-3.png" alt="weapon-2-3">
+
+                  <p class="item">★ Karambit</p>
+                  <p class="item-name">Slaughter</p>
+                  <p class="item-quality">Factory New</p>
+
+                  <div class="item-price">$1438.06</div>
+
+                </div>
+
+              </div>
+
+              <svg class="hover-figure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 563 754" fill="none">
+                <g filter="url(#filter0_b_1632_8703)">
+                  <path d="M-1.13971e-06 727.927L-3.18187e-05 26.0734L30.9485 2.32567e-05L532.051 1.3528e-06L563 26.0734L563 727.927L532.051 754L30.9485 754L-1.13971e-06 727.927Z" fill="url(#paint0_linear_1632_8703)" fill-opacity="0.7"/>
+                  <path d="M31.3136 1.00002L0.999968 26.5385L0.999999 727.461L31.3136 753L531.686 753L562 727.461L562 26.5385L531.686 1L31.3136 1.00002Z" stroke="url(#paint1_linear_1632_8703)" stroke-width="2"/>
+                </g>
+                <defs>
+                  <filter id="filter0_b_1632_8703" x="-20" y="-20" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1632_8703"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1632_8703" result="shape"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_1632_8703" x1="96.7962" y1="521.505" x2="96.7962" y2="67.7362" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#25144A"/>
+                    <stop offset="1" stop-color="#25144A" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1632_8703" x1="120.502" y1="534" x2="130.354" y2="-25.6488" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6149F5"/>
+                    <stop offset="1" stop-color="#AA04D4" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <div class="blur"></div>
+
+            </div>
+
+          </div>
+
+          <div class="case">
+
+            <div class="price">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 32" fill="none">
+                <path d="M0 8.12391L8.03558 0H78.4228L86 7.6603V24.2319L78.3163 32H8.14239L0 23.7682V8.12391Z" fill="url(#paint0_linear_1554_3296)" fill-opacity="0.2"/>
+                <path d="M0.5 23.5627V8.32942L8.24429 0.5H78.2141L85.5 7.86581V24.0264L78.1076 31.5H8.3511L0.5 23.5627Z" stroke="#4AF1B8" stroke-opacity="0.21"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1554_3296" x1="0" y1="16" x2="117" y2="16" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4AF1B8"/>
+                    <stop offset="1" stop-color="#2B8B6A"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span>$ 65.00</span>
+            </div>
+
+            <h2 class="name">STAR PEARL CASE</h2>
+
+            <img class="case-img case-3" src="images/cases/case-3.png" alt="case-3">
+
+            <a class="button hero-button" href={offer_link}><span>OPEN CASE</span></a>
+
+            <div class="space">
+
+              <h2 class="hover-text">TOP SKINS IN THIS CASE</h2>
+
+              <div class="weapons">
+
+                <div class="weapon one">
+
+                  <img class="weapon-img weapon-3-1" src="images/weapons/weapon-3-1.png" alt="weapon-3-1">
+
+                  <p class="item">AWP</p>
+                  <p class="item-name">Fade</p>
+                  <p class="item-quality">Factory New</p>
+
+                  <div class="item-price">$1340.63</div>
+
+                </div>
+                <div class="weapon two">
+
+                  <img class="weapon-img weapon-3-2" src="images/weapons/weapon-3-2.png" alt="weapon-3-2">
+
+                  <p class="item">★ Ursus Knife</p>
+                  <p class="item-name">Doppler</p>
+                  <p class="item-quality">Factory New</p>
+
+                  <div class="item-price">$442.84</div>
+
+                </div>
+                <div class="weapon three">
+
+                  <img class="weapon-img weapon-3-3" src="images/weapons/weapon-3-3.png" alt="weapon-3-3">
+
+                  <p class="item">AK-47</p>
+                  <p class="item-name">X-Ray</p>
+                  <p class="item-quality">Battle-Scarred</p>
+
+                  <div class="item-price">$306.32</div>
+
+                </div>
+
+              </div>
+
+              <svg class="hover-figure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 563 754" fill="none">
+                <g filter="url(#filter0_b_1632_8703)">
+                  <path d="M-1.13971e-06 727.927L-3.18187e-05 26.0734L30.9485 2.32567e-05L532.051 1.3528e-06L563 26.0734L563 727.927L532.051 754L30.9485 754L-1.13971e-06 727.927Z" fill="url(#paint0_linear_1632_8703)" fill-opacity="0.7"/>
+                  <path d="M31.3136 1.00002L0.999968 26.5385L0.999999 727.461L31.3136 753L531.686 753L562 727.461L562 26.5385L531.686 1L31.3136 1.00002Z" stroke="url(#paint1_linear_1632_8703)" stroke-width="2"/>
+                </g>
+                <defs>
+                  <filter id="filter0_b_1632_8703" x="-20" y="-20" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1632_8703"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1632_8703" result="shape"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_1632_8703" x1="96.7962" y1="521.505" x2="96.7962" y2="67.7362" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#25144A"/>
+                    <stop offset="1" stop-color="#25144A" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_1632_8703" x1="120.502" y1="534" x2="130.354" y2="-25.6488" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6149F5"/>
+                    <stop offset="1" stop-color="#AA04D4" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <div class="blur"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__smoke">
+        <picture class="picture object-fit-cover">
+          <source class="object-fit-cover" type="image/webp"/><img class="picture__img object-fit-cover" src="images/smoke.png" alt=""/>
+        </picture>
+      </div>
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__bullet">
+            <picture class="picture object-fit-cover">
+              <source class="object-fit-cover" type="image/webp"/><img class="picture__img object-fit-cover" src="images/bullet.png" alt=""/>
+            </picture>
+          </div>
+          <div class="footer__main">
+            <div class="footer__copy">
+              <div class="footer__logo">
+                <svg class="icon" width="65" height="60" viewBox="0 0 65 60">
+                  <use xlink:href="images/sprites/main.stack.svg#image-logo"></use>
+                </svg>
+              </div>Skin.club © 2024
+            </div>
+            <div class="footer__info">
+              <p>
+                You can get your favorite skin at the best prices.<br> All trades work in the automatic mode via Steam bots.</p>
+            </div>
+            <div class="footer__about">
+              <p>
+                Moontain Limited (HE410299) 13 Kypranoros street, <br> EVI Building, 2nd floor, flat/office 205, 1061, Nicosia, Cyprus.</p>
+            </div>
+          </div>
+          <div class="footer__second">
+            <div class="footer__box">
+              <div class="footer__payment">
+                <div class="footer__payment-image"><img src="images/payments/visa.svg" alt=""></div>
+                <div class="footer__payment-image"><img src="images/payments/mastercard.svg" alt=""></div>
+                <div class="footer__payment-image">
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" type="image/webp"/><img class="picture__img object-fit-cover" src="images/payments/trustly.png" alt=""/>
+                  </picture>
+                </div>
+                <div class="footer__payment-image">
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" type="image/webp"/><img class="picture__img object-fit-cover" src="images/payments/visa-secure.jpg" alt=""/>
+                  </picture>
+                </div>
+                <div class="footer__payment-image"><img src="images/payments/maestro.svg" alt=""></div>
+                <div class="footer__payment-image">
+                  <picture class="picture object-fit-cover">
+                    <source class="object-fit-cover" type="image/webp"/><img class="picture__img object-fit-cover" src="images/payments/mastercard-id-check.png" alt=""/>
+                  </picture>
+                </div>
+              </div>
+              <ul class="footer__links">
+                <li class="footer__links-item"><a class="footer__link" href="mailto:help@skin.club">
+                    <svg class="icon" width="19" height="14" viewBox="0 0 19 14">
+                      <use xlink:href="images/sprites/main.stack.svg#image-mail"></use>
+                    </svg>help@skin.club</a></li>
+                <li class="footer__links-item"><a class="footer__link" href="https://skin.club/en/faq">
+                    <svg class="icon" width="14" height="14" viewBox="0 0 14 14">
+                      <use xlink:href="images/sprites/main.stack.svg#image-faq"></use>
+                    </svg>FAQ</a></li>
+              </ul>
+            </div>
+            <nav class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item"> <a class="footer-menu__link" href="https://skin.club/en/tos">Terms of service </a></li>
+                <li class="footer-menu__item"> <a class="footer-menu__link" href="https://skin.club/en/privacy">Privacy policy</a></li>
+                <li class="footer-menu__item"> <a class="footer-menu__link" href="https://skin.club/en/contacts">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div data-v-ca644d7a="" class="cookies-policy-banner">
+      <div data-v-ca644d7a="" class="cookies-policy-banner__inner-wrapper">
+        <div data-v-ca644d7a="" class="cookies-policy-banner__text-block">
+          <div data-v-ca644d7a="" class="icon-wrap">
+            <img
+                    class="img-cookies"
+                    data-v-ca644d7a=""
+                    src="images/cookie.png"
+                    alt="Cookie banner icon"
+                    width="85"
+                    height="100"
+            >
+          </div><div data-v-ca644d7a="" class="text">
+          <div data-v-ca644d7a="" class="title">
+            Accept Cookies?
+          </div><p data-v-ca644d7a="">
+          Our website uses cookies to improve your experience and to analyze the use of our website. By clicking "Accept" or continuing to browse the site, you agree to our use of cookies, according to our <a data-v-ca644d7a="" href="https://skin.club/en/cookie-policy" class="">Cookie Policy</a>
+        </p>
+        </div>
+        </div><div data-v-ca644d7a="" class="cookies-policy-banner__button-block">
+        <button data-v-37cc08f2="" data-v-ca644d7a="" class="button-wrapper button accept-cookie-button">
+          <div data-v-37cc08f2="" class="button__content">
+          Accept <i data-v-ca644d7a="" class="check-icon"></i>
+        </div>
+        </button>
+      </div>
+      </div>
+    </div>
+    <script>
+      // Set default consent to 'denied' as a placeholder
+      // Determine actual values based on your own requirements
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    </script>
+    <script>
+      function consentGrantedAdStorage() {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+        });
+      }
+      function consentGrantedAdUserData() {
+        gtag('consent', 'update', {
+          'ad_user_data': 'granted'
+        });
+      }
+      function consentGrantedAdPersonalization() {
+        gtag('consent', 'update', {
+          'ad_personalization': 'granted'
+        });
+      }
+      function consentGrantedAnalyticsStorage() {
+        gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
+
+      document.querySelector('.accept-cookie-button').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.cookie = "cookiesAccepted=true;max-age=31536000;path=/";
+        document.querySelector('.cookies-policy-banner').remove();
+        consentGrantedAdStorage();
+        consentGrantedAdUserData();
+        consentGrantedAdPersonalization();
+        consentGrantedAnalyticsStorage();
+      });
+
+      let matches = document.cookie.match(new RegExp("(?:^|; )" + 'cookiesAccepted'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+      if (matches && matches[1] === 'true') {
+        document.querySelector('.cookies-policy-banner').remove();
+        consentGrantedAdStorage();
+        consentGrantedAdUserData();
+        consentGrantedAdPersonalization();
+        consentGrantedAnalyticsStorage();
+      }
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
