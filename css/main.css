@@ -864,7 +864,7 @@ body {
 
   .hero-section .button.hero-button {
     bottom: unset;
-    top: 85px;
+    top: 95px;
     left: 50%;
     transform: translate(calc(-50% - 25px), 0);
 
